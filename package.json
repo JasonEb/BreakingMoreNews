@@ -1,12 +1,12 @@
 {
-  "name": "BreakingMoreNews",
+  "name": "news",
   "version": "1.0.0",
   "description": "An updated take on http://www.breakyourownnews.com/",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "webpack": "webpack --watch",
-    "ws": "ws --spa index.html"
+    "webpack": "webpack --watch --mode development",
+    "ws": "ws --spa index.html --port 8001"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,11 @@
     "babel-loader": "^7.1.4",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
+    "local-web-server": "^2.5.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "webpack": "^4.1.1"
+    "react-router-dom": "^4.2.2",
+    "webpack": "^4.1.1",
+    "webpack-cli": "^2.0.12"
   }
 }
