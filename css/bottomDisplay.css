@@ -1,7 +1,7 @@
 div#bottom_display {
     position: fixed;
     left: 6vw;
-    bottom: 16vh;
+    bottom: 6vh;
 }
 
 div#description{
@@ -10,4 +10,13 @@ div#description{
     font-weight: bold;
     padding: 2px 24px;
     width: 100vw;
+}
+
+div#current_time{
+    background-color: black;
+    color: white;
+    font-size: 3em;
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px 11px;
 }
