@@ -1,5 +1,13 @@
 div#bottom_display {
     position: fixed;
     left: 6vw;
-    bottom: 29vh;
+    bottom: 16vh;
+}
+
+div#description{
+    font-size: 6.5em;
+    background-color: #DEDEDE;
+    font-weight: bold;
+    padding: 2px 24px;
+    width: 100vw;
 }
