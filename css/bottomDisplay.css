@@ -1,0 +1,5 @@
+div#bottom_display {
+    position: fixed;
+    left: 6vw;
+    bottom: 29vh;
+}

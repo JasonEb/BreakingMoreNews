@@ -3,4 +3,5 @@ h1.header {
     width: fit-content;
     background: linear-gradient(var(--main-red), #742122);
     color: white;
+    font-size: 5em;
 }

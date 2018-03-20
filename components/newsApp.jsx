@@ -1,7 +1,7 @@
 import React from 'react';
 
 import LiveBox from './liveBox'
-import Header from './header'
+import BottomDisplay from './bottomDisplay'
 import Background from './background'
 
 class NewsApp extends React.Component {
@@ -9,6 +9,7 @@ class NewsApp extends React.Component {
         return (
             <div id="app">
                 <LiveBox />
+                <BottomDisplay />
             </div>
         )
     }
