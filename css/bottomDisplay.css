@@ -19,4 +19,14 @@ div#current_time{
     font-weight: bold;
     width: fit-content;
     padding: 10px 11px;
+    float: left;
+}
+
+div#ticker{
+    background-color: yellow;
+    color: black;
+    font-size: 3em;
+    font-weight: bold;
+    padding: 10px 11px;
+    float: left;
 }
