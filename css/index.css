@@ -1,15 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Signika');
 @import "liveBox.css";
+@import "header.css";
 
-html{
+/* html{
     height: 100%;
     margin: 0;
     padding: 0;
-}
+} */
 
 body {
     margin: 0;
     padding: 0;
     width: 100vw;
+    font-family: 'Signika', sans-serif;
   }
 
   *,
@@ -17,10 +20,5 @@ body {
   *:after {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  
-  *:focus{
-    outline:none;
+    --main-red: #CB0000;
   }

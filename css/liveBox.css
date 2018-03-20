@@ -1,6 +1,5 @@
 div.live_box {
-    font-family: 'Signika', sans-serif;
-    background: #CB0000;
+    background: var(--main-red) ;
     font-size: 2em;
     font-weight: bold;
     color: white;

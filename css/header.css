@@ -1,0 +1,6 @@
+h1.header {
+    padding: 10px 15px;
+    width: fit-content;
+    background: linear-gradient(var(--main-red), #742122);
+    color: white;
+}
