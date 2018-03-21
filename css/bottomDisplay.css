@@ -22,6 +22,15 @@ div#current_time{
     float: left;
 }
 
+span.colon_blinker{
+    animation: blink 2s infinite;
+}
+
+@keyframes blink {
+    0% { visibility: hidden; }
+    10% { visibility: hidden;}
+}
+
 div#ticker{
     background-color: yellow;
     color: black;
