@@ -21,10 +21,12 @@ class Ticker extends React.Component {
         return (
             <ContentEditable id="ticker"
                 html={this.state.text}
-                tagName="div"
+                tagName="marquee"
                 onChange={ this.handleChange }
                 contentEditable="plaintext-only"
-                spellcheck="false"
+                spellCheck="false"
+                scrolldelay="0"
+                direction="left"
                 onBlur={this.onBlur}
         />
         )

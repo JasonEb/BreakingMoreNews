@@ -27,7 +27,7 @@ class LiveBox extends React.Component{
                 tagName="div"
                 onChange={ this.handleChange }
                 contentEditable="plaintext-only"
-                spellcheck="false"
+                spellCheck="false"
                 onBlur={this.onBlur}
             />
         )

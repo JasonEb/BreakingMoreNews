@@ -25,7 +25,7 @@ class Header extends React.Component {
                 tagName="h1"
                 onChange={ this.handleChange }
                 contentEditable="plaintext-only"
-                spellcheck="false"
+                spellCheck="false"
                 onBlur={this.onBlur}
             />
         )

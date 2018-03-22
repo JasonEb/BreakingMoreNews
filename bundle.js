@@ -406,7 +406,7 @@ var Description = function (_React$Component) {
                 tagName: 'div',
                 onChange: this.handleChange,
                 contentEditable: 'plaintext-only',
-                spellcheck: 'false',
+                spellCheck: 'false',
                 onBlur: this.onBlur
             });
         }
@@ -486,7 +486,7 @@ var Header = function (_React$Component) {
                 tagName: 'h1',
                 onChange: this.handleChange,
                 contentEditable: 'plaintext-only',
-                spellcheck: 'false',
+                spellCheck: 'false',
                 onBlur: this.onBlur
             });
         }
@@ -566,7 +566,7 @@ var LiveBox = function (_React$Component) {
                 tagName: 'div',
                 onChange: this.handleChange,
                 contentEditable: 'plaintext-only',
-                spellcheck: 'false',
+                spellCheck: 'false',
                 onBlur: this.onBlur
             });
         }
@@ -749,10 +749,12 @@ var Ticker = function (_React$Component) {
         value: function render() {
             return _react2.default.createElement(_reactSimpleContenteditable2.default, { id: 'ticker',
                 html: this.state.text,
-                tagName: 'div',
+                tagName: 'marquee',
                 onChange: this.handleChange,
                 contentEditable: 'plaintext-only',
-                spellcheck: 'false',
+                spellCheck: 'false',
+                scrolldelay: '0',
+                direction: 'left',
                 onBlur: this.onBlur
             });
         }
