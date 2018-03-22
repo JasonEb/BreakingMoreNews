@@ -1,10 +1,33 @@
-import React from 'react'
+import React, { Component } from 'react';
+import ContentEditable from 'react-simple-contenteditable';
 
 class Ticker extends React.Component {
+    constructor(props){
+        super(props)
+        this.defaultText = 'CONTROVERSIAL TWEET HISTORY ENDS HUGO "HUGS" GONZALEZ CAREER'
+        this.state = { text: this.defaultText }
+        this.handleChange = this.handleChange.bind(this);
+        this.onBlur = this.onBlur.bind(this);
+    }
+    onBlur(){
+        if( this.state.text.trim() === "" ){
+            this.setState({text: this.defaultText })
+        }
+    }
+    handleChange (ev, value) {
+        this.setState({text: value})
+    }
     render() {
-        return <div id="ticker">
-            "IS THIS REALLY NEWS?" AKS COMMENTER | 5  MILLION RETWEENS IN 1 HOUR ALREA"
-        </div>
+        return (
+            <ContentEditable id="ticker"
+                html={this.state.text}
+                tagName="div"
+                onChange={ this.handleChange }
+                contentEditable="plaintext-only"
+                spellcheck="false"
+                onBlur={this.onBlur}
+        />
+        )
     }
 }
 

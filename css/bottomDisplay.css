@@ -4,7 +4,7 @@ div#bottom_display {
     bottom: 6vh;
 }
 
-div#description{
+div.description{
     font-size: 6.5em;
     background-color: #DEDEDE;
     font-weight: bold;
@@ -38,4 +38,7 @@ div#ticker{
     font-weight: bold;
     padding: 10px 11px;
     float: left;
+    width: 84%;
+    overflow: hidden;
+    height: 59px;
 }

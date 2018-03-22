@@ -22,15 +22,17 @@ class Description extends React.Component {
     render() {
         let {text} = this.state
         
-        return <div id="description" >
+        return(
             <ContentEditable
-            html={this.state.text}
-            onChange={ this.handleChange }
-            contentEditable="plaintext-only"
-            spellcheck="false"
-            onBlur={this.onBlur}
+                html={this.state.text}
+                className="description"
+                tagName="div"
+                onChange={ this.handleChange }
+                contentEditable="plaintext-only"
+                spellcheck="false"
+                onBlur={this.onBlur}
             />
-        </div>
+        )
     }
 }
 
