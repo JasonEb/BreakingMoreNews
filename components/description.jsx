@@ -6,22 +6,29 @@ class Description extends React.Component {
         super(props)
         this.state = { text: "PROFESSIONAL E-GAMER IN RUINS" }
         this.handleChange = this.handleChange.bind(this);
+        this.onBlur = this.onBlur.bind(this);
+    }
+
+    onBlur(){
+        if( this.state.text.trim() === "" ){
+            this.setState({text: "PROFESSIONAL E-GAMER IN RUINS"})
+        }
     }
    
     handleChange (ev, value) {
-      this.setState({
-        text: value
-      })
+        this.setState({text: value})
     }
 
     render() {
         let {text} = this.state
         
-        return <div id="description">
+        return <div id="description" >
             <ContentEditable
             html={this.state.text}
             onChange={ this.handleChange }
             contentEditable="plaintext-only"
+            spellcheck="false"
+            onBlur={this.onBlur}
             />
         </div>
     }
