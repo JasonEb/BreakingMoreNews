@@ -4,7 +4,7 @@ import { withRouter } from 'react-router'
 class Background extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { imageUrl: "../assets/hugobehindbars.jpg", format: "default", backgroundColor: 'green' }
+        this.state = { imageUrl: "../assets/defaultbackground.jpg", format: "default", backgroundColor: 'green' }
     }
     render() {
         let {imageUrl, backgroundColor} = this.state
