@@ -99,8 +99,13 @@ var _bottomDisplay = __webpack_require__(/*! ./bottomDisplay */ "./components/bo
 
 var _bottomDisplay2 = _interopRequireDefault(_bottomDisplay);
 
+var _background = __webpack_require__(/*! ./background */ "./components/background.jsx");
+
+var _background2 = _interopRequireDefault(_background);
+
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+// testing
 var App = function App() {
     return _react2.default.createElement(
         'div',
@@ -109,12 +114,12 @@ var App = function App() {
             _reactRouterDom.Switch,
             null,
             _react2.default.createElement(_reactRouterDom.Route, { exact: true, path: '/', component: _newsApp2.default }),
-            _react2.default.createElement(_reactRouterDom.Route, { path: '/bottomDisplay', component: _bottomDisplay2.default })
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/bottomDisplay', component: _bottomDisplay2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/background', component: _background2.default })
         )
     );
 };
 
-// testing
 exports.default = App;
 
 /***/ }),
@@ -150,19 +155,31 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 var Background = function (_React$Component) {
     _inherits(Background, _React$Component);
 
-    function Background() {
+    function Background(props) {
         _classCallCheck(this, Background);
 
-        return _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).apply(this, arguments));
+        var _this = _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).call(this, props));
+
+        _this.state = { imageUrl: "../assets/HugoBehindBars.jpg" };
+        return _this;
     }
 
     _createClass(Background, [{
         key: "render",
         value: function render() {
+            var imageUrl = this.state.imageUrl;
+
+            var style = {
+                backgroundImage: "url(" + imageUrl + ")",
+                backgroundAttachment: "fixed",
+                backgroundRepeat: "no-repeat",
+                backgroundSize: "cover"
+            };
+
             return _react2.default.createElement(
                 "div",
-                { id: "background" },
-                _react2.default.createElement("img", { src: "../assets/breaking-news.png" })
+                { id: "background", style: style },
+                this.props.children
             );
         }
     }]);
