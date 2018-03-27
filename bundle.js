@@ -146,6 +146,18 @@ function _possibleConstructorReturn(self, call) { if (!self) { throw new Referen
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 
+// import imgPath from '../assets/defaultbackground.jpg'
+// const imgPath = require('../assets/defaultbackground.jpg')
+
+//fix for gh-pages assets url
+var defaultbackgroundUrl = void 0;
+
+if (window.location.href.slice(0, 25) === 'https://holyoke.github.io') {
+    defaultbackgroundUrl = "./assets/defaultbackground.jpg";
+} else {
+    defaultbackgroundUrl = "../assets/defaultbackground.jpg";
+}
+
 var Background = function (_React$Component) {
     _inherits(Background, _React$Component);
 
@@ -154,7 +166,7 @@ var Background = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).call(this, props));
 
-        _this.state = { imageUrl: "../assets/defaultbackground.jpg", format: "default", backgroundColor: 'green' };
+        _this.state = { imageUrl: "./assets/defaultbackground.jpg", format: "default", backgroundColor: 'green' };
         return _this;
     }
 
