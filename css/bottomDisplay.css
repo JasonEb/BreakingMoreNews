@@ -12,6 +12,10 @@ div.description{
     width: 100vw;
 }
 
+div.ticker_container{
+    display: flex;
+    float: left;
+}
 div#current_time{
     background-color: black;
     color: white;
@@ -19,7 +23,6 @@ div#current_time{
     font-weight: bold;
     width: fit-content;
     padding: 11px 11px;
-    float: left;
     height: fit-content;
     margin-top: -1px;
 }
@@ -39,9 +42,7 @@ marquee#ticker{
     font-size: 4vmin;
     font-weight: bold;
     padding: 11px 11px;
-    float: left;
-    width: 84%;
+    width: 93vmax;
     overflow: hidden;
-    height: fit-content;
     margin-top: -1px;
 }

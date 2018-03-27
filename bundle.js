@@ -235,8 +235,12 @@ var BottomDisplay = function (_React$Component) {
                 { id: 'bottom_display' },
                 _react2.default.createElement(_header2.default, null),
                 _react2.default.createElement(_description2.default, null),
-                _react2.default.createElement(_currentTime2.default, null),
-                _react2.default.createElement(_ticker2.default, null)
+                _react2.default.createElement(
+                    'div',
+                    { className: 'ticker_container' },
+                    _react2.default.createElement(_currentTime2.default, null),
+                    _react2.default.createElement(_ticker2.default, null)
+                )
             );
         }
     }]);
