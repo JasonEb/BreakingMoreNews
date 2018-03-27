@@ -154,7 +154,7 @@ var Background = function (_React$Component) {
 
         var _this = _possibleConstructorReturn(this, (Background.__proto__ || Object.getPrototypeOf(Background)).call(this, props));
 
-        _this.state = { imageUrl: "../assets/HugoBehindBars.jpg", format: "default", backgroundColor: 'green' };
+        _this.state = { imageUrl: "../assets/hugobehindbars.jpg", format: "default", backgroundColor: 'green' };
         return _this;
     }
 
