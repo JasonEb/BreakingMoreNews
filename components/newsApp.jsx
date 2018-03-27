@@ -7,10 +7,10 @@ import Background from './background'
 class NewsApp extends React.Component {
     render() {
         return (
-            <div id="app">
+            <Background>
                 <LiveBox />
                 <BottomDisplay />
-            </div>
+            </Background>
         )
     }
 }

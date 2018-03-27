@@ -1,17 +1,24 @@
 import React from 'react'
+import { withRouter } from 'react-router'
 
 class Background extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { imageUrl: "../assets/HugoBehindBars.jpg" }
+        this.state = { imageUrl: "../assets/HugoBehindBars.jpg", format: "default", backgroundColor: 'green' }
     }
     render() {
-        let {imageUrl} = this.state
+        let {imageUrl, backgroundColor} = this.state
+        let {pathname} = this.props.location
         let style = {
-            backgroundImage: `url(${imageUrl})`,
             backgroundAttachment: "fixed",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover"
+        }
+        // look at path url to determine image or green screen
+        if (pathname === '/greenscreen') {
+            style["backgroundColor"] = backgroundColor
+        } else {
+            style["backgroundImage"] = `url(${imageUrl})`
         }
 
         return(
@@ -22,4 +29,4 @@ class Background extends React.Component {
     }
 }
 
-export default Background;
+export default withRouter(Background);
