@@ -15,10 +15,10 @@ The "Live", "Breaking News", and the text below are all editable as seen in the 
 #### Layout is responsive in both Landscape and Portrait 
 I'm leveraging CSS's `vmin` properties for a consistent presentation in both orientations. 
 
-### Upcoming Features
-
 ##### Green Screen
-A green screen would allow streamers to cast this presentation as an overlay. I intend to make this a route at `/#/green_screen`. 
+By going to the route `/#/greenscreen`, a green screen is the background instead to allow using the visuals as an overlay.
+
+### Upcoming Features
 
 ##### Background Image Upload
 A user would be able to upload an image of their choice. I think it'll work well on the phone, but how the image is sized and centered might be a concern.

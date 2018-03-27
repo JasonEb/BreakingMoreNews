@@ -30,5 +30,6 @@ div#background {
 @media (max-height: 680px), screen and (orientation: portrait) {
   div#background {
     background-position-x: -74vw;
+    background-repeat: repeat;
   }
 }
