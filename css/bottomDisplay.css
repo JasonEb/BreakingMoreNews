@@ -5,7 +5,7 @@ div#bottom_display {
 }
 
 div.description{
-    font-size: 6.5em;
+    font-size: 10vmin;
     background-color: #DEDEDE;
     font-weight: bold;
     padding: 2px 24px;
@@ -15,11 +15,13 @@ div.description{
 div#current_time{
     background-color: black;
     color: white;
-    font-size: 3em;
+    font-size: 4vmin;
     font-weight: bold;
     width: fit-content;
-    padding: 10px 11px;
+    padding: 11px 11px;
     float: left;
+    height: fit-content;
+    margin-top: -1px;
 }
 
 span.colon_blinker{
@@ -34,11 +36,12 @@ span.colon_blinker{
 marquee#ticker{
     background-color: yellow;
     color: black;
-    font-size: 3em;
+    font-size: 4vmin;
     font-weight: bold;
-    padding: 10px 11px;
+    padding: 11px 11px;
     float: left;
     width: 84%;
     overflow: hidden;
-    height: 59px;
+    height: fit-content;
+    margin-top: -1px;
 }
