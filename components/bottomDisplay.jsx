@@ -10,8 +10,10 @@ class BottomDisplay extends React.Component {
         return <div id="bottom_display">
             <Header />
             <Description />
-            <CurrentTime />
-            <Ticker />
+            <div className="ticker_container">
+                <CurrentTime />
+                <Ticker />
+            </div>
         </div>
     }
 }
