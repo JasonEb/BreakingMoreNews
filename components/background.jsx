@@ -6,7 +6,11 @@ import { withRouter } from 'react-router'
 //fix for gh-pages assets url
 let defaultbackgroundUrl;
 
-if (window.location.href.slice(0,25) === 'https://holyoke.github.io') {
+let idx = window.location.href.indexOf("/#")
+let url = window.location.href.slice(0, idx)
+let isNotLocal = (url === 'https://interpretivedashdance.github.io/HugsAwayScreen') || (url === 'https://holyoke.github.io/BreakingMoreNews') 
+
+if (isNotLocal) {
     defaultbackgroundUrl = "./assets/defaultbackground.jpg"
 } else {
     defaultbackgroundUrl = "../assets/defaultbackground.jpg"
@@ -22,7 +26,7 @@ class Background extends React.Component {
         let {pathname} = this.props.location
         let style = {
             backgroundAttachment: "fixed",
-            backgroundRepeat: "no-repeat",
+            backgroundRepeat: "repeat",
             backgroundSize: "cover"
         }
         // look at path url to determine image or green screen
