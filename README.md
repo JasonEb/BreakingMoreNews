@@ -1,4 +1,4 @@
-# [Demo](interpretivedashdance.github.io/HugsAwayScreen/#/)
+# [Demo](https://interpretivedashdance.github.io/HugsAwayScreen/#/)
 
 ![hugsawaydemogif](https://user-images.githubusercontent.com/6300995/37747961-ec6343c6-2d3e-11e8-87fb-f7676c889ef5.gif)
 
