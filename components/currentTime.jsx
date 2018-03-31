@@ -19,7 +19,6 @@ class CurrentTime extends React.Component {
     }
     render() {
         let {date} = this.state
-        console.log(date.getSeconds())
         let hour = date.getHours()
         let minutes = date.getMinutes()
         minutes = minutes < 10 ? "0" + minutes : minutes

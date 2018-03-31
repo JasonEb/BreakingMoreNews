@@ -104,9 +104,23 @@ var App = function App() {
         'div',
         { id: 'app' },
         _react2.default.createElement(
+            'div',
+            { className: 'navBar' },
+            _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { exact: true, className: 'nav-item', activeStyle: { fontWeight: 'bold' }, to: '/' },
+                'Away Screen'
+            ),
+            _react2.default.createElement(
+                _reactRouterDom.NavLink,
+                { className: 'nav-item', activeStyle: { fontWeight: 'bold' }, to: '/greenscreen' },
+                'Green Screen'
+            )
+        ),
+        _react2.default.createElement(
             _reactRouterDom.Switch,
             null,
-            _react2.default.createElement(_reactRouterDom.Route, { component: _newsApp2.default }),
+            _react2.default.createElement(_reactRouterDom.Route, { path: '/', component: _newsApp2.default }),
             _react2.default.createElement(_reactRouterDom.Route, { path: '/greenscreen', component: _newsApp2.default })
         )
     );
@@ -348,7 +362,6 @@ var CurrentTime = function (_React$Component) {
         value: function render() {
             var date = this.state.date;
 
-            console.log(date.getSeconds());
             var hour = date.getHours();
             var minutes = date.getMinutes();
             minutes = minutes < 10 ? "0" + minutes : minutes;
